@@ -13,10 +13,7 @@ class AddLiveAndPostsOnFieldsToTheArticlesTable extends Migration
      */
     public function up()
     {
-        Schema::table('articles', function (Blueprint $table) {
-            $table->boolean('live')->deafult(0);
-            $table->timestamp('post_on')->nullable();
-        });
+
     }
 
     /**
@@ -26,8 +23,7 @@ class AddLiveAndPostsOnFieldsToTheArticlesTable extends Migration
      */
     public function down()
     {
-        Schema::table('articles', function (Blueprint $table) {
-            $table->dropColumn(['live','post_on']);
-        });
     }
+
+
 }

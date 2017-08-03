@@ -31,7 +31,6 @@ $factory->define(App\Article::class, function (Faker\Generator $faker) {
         'user_id' =>App\User::all()->random()->id,
         'heading' => $faker->word,
         'content' =>$faker->paragraph(1),
-        'live' => $faker->boolean(),
-        'post_on' => Carbon\Carbon::parse('+1 week')
+
     ];
 });

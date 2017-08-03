@@ -23,8 +23,10 @@
                 <div class="panel-footer clearfix">
 
                     <a href=/seeprofile/show/{{$article->user->id}}>
-                        << {{$article->user->name}} adlı kullanıcının profiline git. </a>
-                    <a href=/home  class="pull-right">Mevasis Bloğun anasayfa>> </a>
+                        << {{$article->user->name}} adlı kullanıcının profiline git.
+                    </a>
+                    <a href=/home  class="pull-right">Mevasis Bloğun anasayfa>>
+                    </a>
                 </div>
             </div>
         </div>
